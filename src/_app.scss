@@ -1,0 +1,20 @@
+@import "scss-reset/_reset.scss";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+$primary-color: #f5f5f5 !default;
+$second-color: #1266dd !default;
+$third-color: #f73859 !default;
+$lightblue: #cbeaf5;
+$white: #fff;
+$gray: rgb(119, 119, 119);
+
+.app {
+  font-size: 16px;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  background-color: $primary-color;
+  user-select: none;
+  height: 100%;
+}
+.link {
+  text-decoration: none;
+}

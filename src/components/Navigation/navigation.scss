@@ -1,0 +1,41 @@
+@import "../../_app.scss";
+.navigation {
+  width: 100%;
+  height: 40px;
+  background-color: $second-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  .container {
+    max-width: 1130px;
+    padding: 15px;
+  }
+  &_menu {
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  &_nav {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    &:hover {
+      background-color: $third-color;
+    }
+  }
+  &_active,
+  .active {
+    background-color: $third-color;
+  }
+}

@@ -1,0 +1,14 @@
+export { default as Header } from "./Header/Header";
+export { default as Button } from "./Button/Button";
+export { default as InPutForm } from "./InputForm/InputForm";
+export { default as Navigation } from "./Navigation/Navigation";
+export { default as Search } from "./Search/Search";
+export { default as ProvinceCard } from "./ProvinceCard/ProvinceCard";
+export { default as Posts } from "./Posts/Posts";
+export { default as NavRight } from "./NavRight/NavRight";
+export { default as Pagination } from "./Pagination/Pagination";
+export { default as Contact } from "./Contact/Contact";
+export { default as Introduction } from "./Introduction/Introduction";
+export { default as NewPost } from "./NewPost/NewPost";
+export { default as Model } from "./Model/Model";
+export { default as Select } from "./Select/Select";

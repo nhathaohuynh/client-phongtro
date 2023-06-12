@@ -1,0 +1,45 @@
+@import "../../_app.scss";
+.posts {
+  background-color: $white;
+  padding-top: 16px;
+  font-size: 14px;
+  color: black;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 8px;
+  &_header {
+    padding: 0 16px;
+  }
+  &_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h4 {
+      color: black;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    span {
+      display: flex;
+      gap: 4x;
+      font-size: 14px;
+    }
+  }
+  &_filter {
+    margin-top: 12px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 12px;
+    gap: 8px;
+    span {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &_empty {
+    font-size: 20px;
+    text-align: center;
+    color: $third-color;
+    font-weight : bold;
+    padding : 16px 0 ;
+  }
+}

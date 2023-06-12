@@ -1,0 +1,55 @@
+@import "../../app";
+.navright {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  &_menu {
+    border-radius : 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 100%;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  }
+  &_item {
+    padding: 6px;
+    border-bottom: 1px dashed rgba(100, 100, 111, 0.2);
+  }
+  &_title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  &_double{
+    justify-content: space-between;
+  }
+  .double_item {
+    width:50%;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  &_item {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    color: rgba(0, 0, 0, 0.9);
+
+    .link {
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.7);
+      &:hover {
+        color: $third-color;
+      }
+    }
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+

@@ -1,0 +1,30 @@
+@import "../../_app.scss";
+.provinceCard {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: $white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  color: $second-color;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color : $third-color
+  }
+  &_image {
+    width: 190px;
+    height: 110px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  &_location {
+    
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    padding: 8px 0;
+  }
+}

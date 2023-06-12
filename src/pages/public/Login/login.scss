@@ -1,0 +1,46 @@
+@import "../../../_app.scss";
+.login {
+  margin: auto;
+  height: 500px;
+  width: 600px;
+  padding: 50px;
+  margin-top: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  h3 {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: $second-color;
+    text-align: center;
+  }
+  &_username,
+  &_password {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  &_password {
+    margin-bottom: 20px;
+  }
+  &_other {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    .link {
+      color: $second-color;
+      transition: all 0.15s ease-in-out;
+      &:hover {
+        opacity: 0.8;
+        text-decoration: underline;
+      }
+    }
+  }
+}

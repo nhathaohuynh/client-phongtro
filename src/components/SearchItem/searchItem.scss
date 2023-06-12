@@ -1,0 +1,31 @@
+@import "../../_app.scss";
+.searchItem {
+  background-color: $white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $gray;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  &:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    opacity: 0.9;
+  }
+  &_left {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+}
+.sign {
+  font-weight: bold;
+  color: $second-color;
+}

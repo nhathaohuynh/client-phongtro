@@ -1,0 +1,58 @@
+@import "../../app";
+.newPost {
+  padding: 16px;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 24px;
+  }
+  &_post {
+    display: flex;
+    gap: 12px;
+    padding: 16px 0;
+    border-bottom : 1px solid  rgba(0,0,0,0.1);
+    &:last-child{
+      border-bottom: none;
+    }
+    img {
+      width: 65px;
+      height: 65px;
+      flex: none;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+  }
+  &_title {
+    color: rgba($second-color, 0.8);
+    display : -webkit-box;
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-size : 14px; 
+    font-weight: 500;
+  }
+  &_content {
+    flex : 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    justify-content: space-between;
+  }
+  &_des {
+    display: flex;
+    justify-content: space-between;
+  }
+  &_price {
+    font-weight: bold;
+    color: rgba(17, 147, 17, 0.9);
+    font-size: 15px;
+  }
+  &_time {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+  }
+}

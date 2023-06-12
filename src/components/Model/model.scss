@@ -1,0 +1,189 @@
+@import "../../app";
+.model {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+
+  &_wrapper {
+    background-color: white;
+    position: sticky;
+    top: 50%;
+    left: 50%;
+    width: 700px;
+    max-height: 500px;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    border: none;
+    overflow: hidden;
+    z-index: 9999;
+  }
+
+  &_header {
+    display: flex;
+    padding: 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: $third-color;
+    align-items: center;
+    h4 {
+      font-size: 14px;
+      font-weight: bold;
+      color: white;
+      transform: translateX(-50%);
+      text-transform: uppercase;
+    }
+  }
+  &_close {
+    margin-right: 50%;
+    color: white;
+    cursor: pointer;
+  }
+  &_row {
+    padding: 50px 12px;
+    padding-top: 30px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  &_column {
+    padding: 0px 12px;
+  }
+  &_item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 0;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  &_single {
+    width: 150px;
+    background-color: red;
+    text-align: center;
+    border-radius: 6px;
+    padding: 4px 2px;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    &:hover {
+      background-color: $second-color;
+      color: white;
+    }
+  }
+  .single_active {
+    background-color: $second-color;
+    color: white;
+  }
+  &_range {
+    width: 600px;
+    display: flex;
+    padding: 12px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    .line {
+      height: 5px;
+      background-color: rgba(0, 0, 0, 0.2);
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      bottom: 0;
+      transform: translate(0, -50%);
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+    .line_track {
+      height: 5px;
+      background-color: $third-color;
+      position: absolute;
+      top: 50%;
+      bottom: 0;
+      transform: translate(0, -50%);
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.05s ease-in-out;
+    }
+  }
+  &_input {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    appearance: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    z-index: 3;
+    height: 5px;
+  }
+  input[type="range"]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    height: 5px;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 9999px;
+    background-color: $second-color;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transform: translateY(-50%);
+    pointer-events: auto;
+    cursor: pointer;
+  }
+
+  &_footer {
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+    background-color: $second-color;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  &_price {
+    position: absolute;
+    top: -100%;
+    color: $third-color;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    font-size: 20px;
+  }
+  &_value {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 500;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 6px;
+    .min {
+      transform: translateX(20%);
+    }
+  }
+  &_quickChose {
+    padding: 0 12px;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,91 @@
+@import "../../_app.scss";
+.header {
+  max-width: 1130px;
+  margin: auto;
+  background-color: $primary-color;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  &_logo {
+    width: 240px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &_actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 14px;
+  }
+  &_user {
+    color: black;
+  }
+
+  &_user {
+    position: relative;
+  }
+  &_behavior {
+    position: absolute;
+    left: 0;
+    top: 110%;
+    z-index: 999;
+    width: 110%;
+    font-size: 14px;
+    background-color: #fff;
+    padding: 4px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    img {
+      width: 20px;
+      height: 20px;
+      object-fit: cover;
+    }
+    li,
+    .link {
+      padding: 10px 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      color: $second-color;
+      &:last-child {
+        border-bottom: none;
+      }
+      &:hover {
+        color: $third-color;
+      }
+    }
+  }
+  &_info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 9999px;
+      border: 2px solid rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .userInfo {
+      display: flex;
+      flex-direction: column;
+      strong {
+        font-weight: bold;
+      }
+    }
+  }
+}

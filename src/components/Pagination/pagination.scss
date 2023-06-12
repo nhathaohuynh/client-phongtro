@@ -1,0 +1,26 @@
+@import "../../_app.scss";
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  gap: 12px;
+  font-weight: 500;
+  &_item {
+    padding: 15px 25px;
+    background-color: $white;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background-color: $second-color;
+      color: white;
+    }
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  &_active {
+    background-color: $second-color;
+    color: white;
+  }
+}

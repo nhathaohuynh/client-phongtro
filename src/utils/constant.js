@@ -1,0 +1,16 @@
+export const path = {
+  HOME: "/",
+  LOGIN: "login",
+  REGISTER: "register",
+  STAR: "*",
+  RENTAL_HOUSE: "nha-cho-thue",
+  RENTAL_ROOM: "cho-thue-phong-tro",
+  RENTAL_APARTMENT: "cho-thue-can-ho",
+  RENTAL_SPACE: "cho-thue-mat-bang",
+  DETAIL_POST_ID: "detail-post/:id",
+  SEARCH_DETAIL: "search",
+  SYSTEM: "/he-thong",
+  NEW_POST: "bai-dang-moi",
+  MANAGEMENT_POST: "quan-li-bai-dang",
+  INFO_USER: "thong-tin-khach-hang",
+};

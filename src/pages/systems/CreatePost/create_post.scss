@@ -1,0 +1,124 @@
+@import "../../../app";
+.create_post {
+  &_title {
+    font-weight: bold;
+    font-size: 30px;
+    color: $third-color;
+    text-transform: uppercase;
+  }
+  hr {
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+  }
+  &_content {
+    display: flex;
+    gap: 12px;
+  }
+  &_detail {
+    flex: 5;
+  }
+  &_map {
+    flex: 2.5;
+  }
+  &_address {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+  h5 {
+    font-size: 20px;
+    color: $second-color;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-transform: capitalize;
+  }
+  &_showAddress {
+    border: none;
+    width: 100%;
+    caret-color: transparent;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    border: 1px solid $second-color;
+  }
+  &_item {
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+    gap: 8px;
+    margin-top: 20px;
+  }
+  &_exactly_title {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: capitalize;
+    font-size: 14px;
+  }
+  &_infoPost {
+    margin-top: 24px;
+  }
+  &_form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 16px;
+    label {
+      color: rgba(0, 0, 0, 0.8);
+      font-weight: 600;
+      font-size: 14px;
+    }
+  }
+  &_wrapInput {
+    display: flex;
+    align-items: center;
+    button {
+      background-color: rgba(0, 0, 0, 0.2);
+      width: 60px;
+      padding: 8px 2px;
+      border: 1px solid $second-color;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-left: none;
+    }
+  }
+  &_wrapInput.halfRadius {
+    border: 1px solid $second-color;
+    border-radius: 4px;
+    .create_post_input {
+      border: none;
+    }
+    button {
+      border: none;
+    }
+  }
+  &_input {
+    width: 100%;
+    border: 1px solid $second-color;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  input[type="file"] {
+    display: none;
+  }
+
+  &_inputFile {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    border: 1px solid $second-color;
+    border-radius: 4px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    .inputFile_icon {
+      color: $second-color;
+    }
+  }
+}
